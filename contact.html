@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Frame & Co Photography</title>
+<meta name="description" content="Get in touch with Frame & Co to book a portrait, wedding, or brand photography session in Nairobi.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="logo">Frame<span>&</span>Co</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>PORTRAITS&nbsp;&nbsp;·&nbsp;&nbsp;WEDDINGS&nbsp;&nbsp;·&nbsp;&nbsp;BRAND SHOOTS&nbsp;&nbsp;·&nbsp;&nbsp;NAIROBI, KENYA&nbsp;&nbsp;·&nbsp;&nbsp;EST. 2024&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+    <span>PORTRAITS&nbsp;&nbsp;·&nbsp;&nbsp;WEDDINGS&nbsp;&nbsp;·&nbsp;&nbsp;BRAND SHOOTS&nbsp;&nbsp;·&nbsp;&nbsp;NAIROBI, KENYA&nbsp;&nbsp;·&nbsp;&nbsp;EST. 2024&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<section class="hero" style="min-height: 40vh;">
+  <img src="portrait.jpg" alt="Black and white studio portrait" class="hero-photo">
+  <div class="hero-scrim"></div>
+  <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+  <div class="wrap hero-content">
+    <span class="frame-label light">Frame 07 — Get in Touch</span>
+    <h1 class="h1-small">Let's <em>book</em> your shoot.</h1>
+    <p class="lede">Tell us what you're planning and we'll reply within a day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="reveal">
+      <!--
+        FORM SETUP — already connected to Formspree.
+        Endpoint: https://formspree.io/f/mrenveoo
+      -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrenveoo" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="field">
+          <label for="message">What are you booking?</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-amber">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+      <p class="form-note">We reply within 24 hours.</p>
+    </div>
+
+    <div class="reveal">
+      <span class="frame-label">Studio Details</span>
+      <div class="contact-details">
+        <p>Ongata Rongai, Nairobi<br>
+        Mon–Sat, 9am–6pm</p>
+        <p>
+          Email: <a href="mailto:hello@frameandco.example">hello@frameandco.example</a><br>
+          Phone: <a href="tel:+254700000000">+254 700 000 000</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <span>© 2026 Frame & Co, Nairobi</span>
+    <span>Built as a practice project</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
